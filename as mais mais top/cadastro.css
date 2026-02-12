@@ -1,0 +1,20 @@
+body {
+    font-weight:bold;
+    background-color:#F5F5F5;
+    text-align: center;
+}
+
+form{
+    background-color:#E6F4FF;
+    justify-self: center;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+button{
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+
