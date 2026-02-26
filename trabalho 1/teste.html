@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="teste.css">
+    <title>Cadastro</title>
+</head>
+<body>
+    <section id="formulario">
+    <h1>Cadastro</h1>
+    <form onsubmit="alert('Dados salvos com sucesso!')">
+
+        <label>Nome Completo:</label>
+        <input type="text" name="nome" placeholder="Digite seu nome"/> <br><br>
+
+        <label>Data de Nascimento:</label>
+        <input type="date" name="nasc" placeholder="dd/mm/aaaa"/> <br><br>
+
+        <label>Email:</label>
+        <input type="email" required multiple> <br><br>
+
+        <label>Senha:</label>
+        <input type="password" name="senha"> <br><br>
+
+        <label>Gênero</label>
+        <div class="gen">
+            <input type="radio" name="genero" value="feminino"> Feminino 
+            <input type="radio" name="genero" value="masculino"> Masculino 
+            <input type="radio" name="genero" value="nao informar"> Não informar 
+        </div> <br><br>
+        <button type="submit">Enviar</button>
+    </form>    
+</section>
+</body>
+</html>
+
