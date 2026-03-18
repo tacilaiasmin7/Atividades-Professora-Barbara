@@ -1,0 +1,47 @@
+body{
+    margin:0;
+    padding:0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg,#4facfe,#00f2fe);
+    text-align:center;
+}
+
+header{
+    margin-top:30px;
+}
+
+/* Caixa principal */
+.container{
+    background: rgba(255,255,255,0.7); /* branco transparente */
+    padding:30px;
+    border-radius:12px;
+    width:500px;
+    margin:20px auto;
+    box-shadow:0 8px 20px rgba(0,0,0,0.2);
+    transform: translateX(-400px);
+    animation: slidenIn 3s forwards;
+}
+
+/* Caixa do usuário */
+#caixa2{
+    background: rgba(255,255,255,0.7);
+    padding:20px;
+    border-radius:10px;
+    margin-top:20px;
+    
+}
+
+footer{
+    margin-top:30px;
+}
+
+footer a{
+    margin:10px;
+    text-decoration:none;
+    color:#333;
+    font-weight:bold;
+}
+
+footer a:hover{
+    color:#0077ff;
+}
