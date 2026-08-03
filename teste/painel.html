@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>Painel</title>
+
+<style>
+
+body{
+
+height: 80vh;
+display: flex;
+justify-content: center;
+align-items: center;
+background:#f4f6f9;
+text-align: center;
+font-family:Arial;
+padding:50px;
+
+}
+
+h1{
+
+color:#2C5364;
+
+}
+
+.card{
+background:white;
+width: 250px;
+padding:30px;
+border-radius:15px;
+box-shadow:0 10px 20px rgba(0,0,0,.2);
+
+}
+
+button{
+
+margin-top:20px;
+padding:12px;
+border:none;
+background:#2C5364;
+color:white;
+border-radius:8px;
+cursor:pointer;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="card">
+
+<h1>Bem-vindo!</h1>
+
+<p>Você acessou o sistema.</p>
+
+<button onclick="logout()">Sair</button>
+
+</div>
+
+<script>
+
+function logout(){
+
+window.location="index.html";
+
+}
+
+</script>
+
+</body>
+
+</html>

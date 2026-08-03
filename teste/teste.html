@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Portal do Aluno</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+
+background:linear-gradient(120deg,#0F2027,#203A43,#2C5364);
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+
+}
+
+.card{
+
+background:white;
+width: 325px;;
+padding:40px;
+border-radius:20px;
+box-shadow:0 15px 30px rgba(0,0,0,.3);
+text-align:center;  
+
+}
+
+h1{
+
+color:#2C5364;
+margin-bottom:10px;
+
+}
+
+p{
+
+color:#666;
+margin-bottom:25px;
+
+}
+
+input{
+
+width:100%;
+padding:14px;
+margin:10px 0;
+border-radius:8px;
+border:1px solid #ccc;
+font-size:16px;
+
+}
+
+button{
+
+width:100%;
+padding:15px;
+margin-top:20px;
+border:none;
+border-radius:10px;
+background:#2C5364;
+color:white;
+font-size:18px;
+cursor:pointer;
+transition:.3s;
+
+}
+
+button:hover{
+
+background:#1b3944;
+
+}
+
+#mensagem{
+
+margin-top:20px;
+font-weight:bold;
+
+}
+
+footer{
+
+margin-top:25px;
+font-size:13px;
+color:#999;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="card">
+
+<h1>Portal Acadêmico</h1>
+
+<p>Entre para acessar o sistema.</p>
+
+<input type="text" id="usuario" placeholder="Usuário">
+
+<input type="password" id="senha" placeholder="Senha">
+
+<button onclick="login()">Entrar</button>
+
+<div id="mensagem"></div>
+
+<footer>
+
+© 2026 Universidade Virtual
+
+</footer>
+
+</div>
+
+<script>
+
+function login(){
+
+let usuario=document.getElementById("usuario").value;
+
+let senha=document.getElementById("senha").value;
+
+const usuarioCorreto="admin";
+
+const senhaCorreta="123456";
+
+if(usuario==usuarioCorreto && senha==senhaCorreta){
+
+document.getElementById("mensagem").style.color="green";
+
+document.getElementById("mensagem").innerHTML="Login realizado com sucesso!";
+
+setTimeout(function(){
+
+window.location="painel.html";
+
+},1000);
+
+}
+else{
+
+document.getElementById("mensagem").style.color="red";
+
+document.getElementById("mensagem").innerHTML="Usuário ou senha incorretos.";
+
+}
+
+}
+
+</script>
+
+</body>
+
+</html>
