@@ -2,110 +2,158 @@
 <html lang="pt-br">
 
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>Portal do Aluno</title>
+  <title>Portal do Aluno</title>
 
-<style>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial, Helvetica, sans-serif;
-}
+    body {
 
-body{
+      background: black;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
-background:black;
-height:100vh;
-display:flex;
-justify-content:center;
-align-items:center;
+    }
 
-}
+    .card {
 
-.card{
+      background: black;
+      width: 325px;
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 15px 30px rgba(0, 0, 0, .3);
+      text-align: center;
 
-background:black;
-width: 325px;;
-padding:40px;
-border-radius:20px;
-box-shadow:0 15px 30px rgba(0,0,0,.3);
-text-align:center;  
+    }
 
-}
+    h1 {
 
-h1{
-
-color:white;
-margin-bottom:10px;
-font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
-
-}
+      color: white;
+      margin-bottom: 10px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    }
 
 
-input{
+    input {
 
-width:100%;
-background-color: rgba(128, 128, 128, 0.3); 
-padding:14px;
-margin:10px 0;
-border-radius:8px;
-border:1px solid rgba(128, 128, 128, 0.3);
-font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+      width: 100%;
+      background-color: rgba(128, 128, 128, 0.3);
+      padding: 14px;
+      margin: 10px 0;
+      border-radius: 8px;
+      border: 1px solid rgba(128, 128, 128, 0.3);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    }
 
-}
+    input::placeholder {
+      color: white;
 
-input::placeholder {
-  color: white;
+    }
 
-}
-button{
-
-width:100%;
-padding:15px;
-margin-top:20px;
-border:1px solid #D3D3D3;
-border-radius:10px;
-background:black;
-color:white;
-cursor:pointer;
-transition:.3s;
-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
-}
-
-h5{
-    text-align: left;
-    color:white;
-    font-size: 10px;
-}
+    button {
 
 
-</style>
+      width: 100%;
+      padding: 15px;
+      margin-top: 20px;
+      border: 1px solid #D3D3D3;
+      border-radius: 10px;
+      background: black;
+      color: white;
+      cursor: pointer;
+      transition: .3s;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    }
+
+    h5 {
+      text-align: left;
+      color: white;
+      font-size: 10px;
+    }
+
+
+    #mensagem {
+
+      margin-top: 20px;
+      font-weight: bold;
+
+    }
+  </style>
 
 </head>
 
 <body>
 
-<div class="card">
+  <form>
 
-<h1>Nome do produto</h1>
+    <div class="card">
 
-<h5>NOME</h5>
-<input type="text" id="nome" required placeholder="Nome"><br><br>
+      <h1>Nome do produto</h1>
 
-<h5>EMAIL</h5>
-<input type="text" id="email" required placeholder="Email"><br><br>
+      <h5>NOME</h5>
+      <input type="text" id="nome" required placeholder="Nome"><br><br>
 
-<h5>SENHA</h5>
-<input type="password" id="senha" required placeholder="Senha"><br><br>
+      <h5>EMAIL</h5>
+      <input type="text" id="email" required placeholder="Email"><br><br>
 
-<button onclick="login()">Entrar</button>
+      <h5>SENHA</h5>
+      <input type="password" id="senha" required placeholder="Senha"><br><br>
 
+      <div id="mensagem"></div>
 
+      <button type="button" onclick="login()">Entrar</button>
+    </div>
+  </form>
 </body>
+<script>
+
+  function login() {
+
+    let nome = document.getElementById("nome").value;
+
+    let senha = document.getElementById("senha").value;
+
+    let email = document.getElementById("email").value;
+
+    const usuarioCorreto = "lara couto";
+
+    const emailCorreto = "lara@gmail.com";
+
+    const senhaCorreta = "123456";
+
+    if (nome == usuarioCorreto && senha == senhaCorreta && email == emailCorreto) {
+
+      document.getElementById("mensagem").style.color = "green";
+
+      document.getElementById("mensagem").innerHTML = "Login realizado com sucesso!";
+      setTimeout(function () {
+
+        window.location = "painel.html";
+
+      }, 1000);
+
+    }
+    else {
+
+      document.getElementById("mensagem").style.color = "red";
+
+      document.getElementById("mensagem").innerHTML = "Usuário ou senha incorretos.";
+
+    }
+
+  }
+
+</script>
 
 </html>
