@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TA Eletronicos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        .card-img-top {
+            height: 300px;
+            width: 100%;
+            object-fit: contain;
+            background-color: white;
+        }
+
+        .carousel .card {
+            height: 100%;
+        }
+
+        .carousel .card-body {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        body{
+            background-color: rgba(50, 3, 88, 0.87);
+        }
+
+        header {
+            background-color: black;
+            color: white;
+        }
+
+        footer{
+            background-color: black;
+             color: white;
+        }
+    </style>
+</head>
+
+<body class=>
+
+<header class=>
+    <div class="container d-flex justify-content-center">
+        <img src="logo.png" alt="logo" style="height: 100px;">
+    </div>
+    <h2>eletromidia</h2>
+</header>
+
+<div class="container py-5">
+
+    <h1 class="text-center mb-4 text-light">Produtos da Loja</h1>
+
+    <div class="row">
+
+        <div class="col-md-4 mb-3">
+            <div class="card">
+                <img src="monitor.png" class="card-img-top" alt="Monitor Positivo">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Monitor Positivo</h5>
+                    <h5 class="alert alert-info py-1" role="alert">R$ 199,50</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-3">
+            <div class="card">
+                <img src="gabinete.jpg" class="card-img-top" alt="Gabinete">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Gabinete</h5>
+                    <h5 class="alert alert-info py-1" role="alert">R$ 129,99</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-3">
+            <div class="card">
+                <img src="teclado.avif" class="card-img-top" alt="Teclado">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Teclado</h5>
+                    <h5 class="alert alert-info py-1" role="alert">R$ 149,99</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-3">
+            <div class="card">
+                <img src="mouse.jpg" class="card-img-top" alt="Mouse">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Mouse</h5>
+                    <h5 class="alert alert-info py-1" role="alert">R$ 56,73</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-3">
+            <div class="card">
+                <img src="headset.webp" class="card-img-top" alt="Headset">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Headset</h5>
+                    <h5 class="alert alert-info py-1" role="alert">R$ 167,99</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-3">
+            <div class="card">
+                <img src="fonte.webp" class="card-img-top" alt="Fonte de carregador">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Fonte de carregador</h5>
+                    <h5 class="alert alert-info py-1" role="alert">R$ 169,99</h5>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="container pb-5">
+
+    <h2 class="text-light mb-4">Ofertas da Semana</h2>
+
+    <div id="carouselProdutos" class="carousel slide">
+
+        <div class="carousel-inner">
+
+            <div class="carousel-item active">
+                <div class="row g-3">
+
+                    <div class="col-6 col-md-3">
+                        <div class="card">
+                            <img src="hd.jpg" class="card-img-top" alt="HD">
+                            <div class="card-body text-center">
+                                <h6>HD</h6>
+                                <p class="text-muted text-decoration-line-through">
+                                    R$ 159,90
+                                </p>
+                                <div class="alert alert-success py-1">
+                                    R$ 134,47
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-md-3">
+                        <div class="card">
+                            <img src="placadevideo.webp" class="card-img-top" alt="Placa de vídeo">
+                            <div class="card-body text-center">
+                                <h6>Placa de vídeo</h6>
+                                <p class="text-muted text-decoration-line-through">
+                                    R$ 649,90
+                                </p>
+                                <div class="alert alert-success py-1">
+                                    R$ 570,66
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-md-3">
+                        <div class="card">
+                            <img src="memoriaram.webp" class="card-img-top" alt="Memória RAM">
+                            <div class="card-body text-center">
+                                <h6>Memória RAM 16GB</h6>
+                                <p class="text-muted text-decoration-line-through">
+                                    R$ 749,90
+                                </p>
+                                <div class="alert alert-success py-1">
+                                    R$ 689,99
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-md-3">
+                        <div class="card">
+                            <img src="altofalante.webp" class="card-img-top" alt="Alto falante">
+                            <div class="card-body text-center">
+                                <h6>Alto falante</h6>
+                                <p class="text-muted text-decoration-line-through">
+                                    R$ 329,90
+                                </p>
+                                <div class="alert alert-success py-1">
+                                    R$ 294,90
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="row g-3">
+
+                    <div class="col-6 col-md-3">
+                        <div class="card">
+                            <img src="miniteclado.jpg" class="card-img-top" alt="Mini Teclado">
+                            <div class="card-body text-center">
+                                <h6>Mini Teclado C/ Touchpad</h6>
+                                <p class="text-muted text-decoration-line-through">
+                                    R$ 49,90
+                                </p>
+                                <div class="alert alert-success py-1">
+                                    R$ 39,99
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-md-3">
+                        <div class="card">
+                            <img src="suporte.jpg" class="card-img-top" alt="Suporte para Headset">
+                            <div class="card-body text-center">
+                                <h6>Suporte para Headset</h6>
+                                <p class="text-muted text-decoration-line-through">
+                                    R$ 69,90
+                                </p>
+                                <div class="alert alert-success py-1">
+                                    R$ 56,99
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-md-3">
+                        <div class="card">
+                            <img src="cadeira.webp" class="card-img-top" alt="Cadeira Gamer">
+                            <div class="card-body text-center">
+                                <h6>Cadeira Gamer</h6>
+                                <p class="text-muted text-decoration-line-through">
+                                    R$ 499,90
+                                </p>
+                                <div class="alert alert-success py-1">
+                                    R$ 449,99
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-md-3">
+                        <div class="card">
+                            <img src="webcam.jpg" class="card-img-top" alt="Webcam">
+                            <div class="card-body text-center">
+                                <h6>Webcam</h6>
+                                <p class="text-muted text-decoration-line-through">
+                                    R$ 159,90
+                                </p>
+                                <div class="alert alert-success py-1">
+                                    R$ 145,00
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <button class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselProdutos"
+                data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+
+        <button class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselProdutos"
+                data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+
+    </div>
+</div>
+
+<footer class=>
+    <div class="container text-center">
+        <p>© eletromidia — Todos os direitos reservados.</p>
+        <a href="https://www.instagram.com">Instagram</a>
+        <a href="https://web.whatsapp.com/">Contato</a>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
