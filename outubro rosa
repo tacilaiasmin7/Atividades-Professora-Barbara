@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Outubro Rosa</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #fff0f5;
+            color: #4a2635;
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background: white;
+            color: #d81b60;
+            text-align: center;
+            padding: 25px;
+            border-bottom: 3px solid #f8bbd0;
+        }
+
+        nav a {
+            color: #d81b60;
+            text-decoration: none;
+            margin: 8px;
+            font-weight: bold;
+        }
+
+        section {
+            background: white;
+            margin: 20px auto;
+            padding: 25px;
+            max-width: 900px;
+            border-radius: 15px;
+        }
+
+        h1 {
+            color: #d81b60;
+        }
+
+        h2 {
+            color: #d81b60;
+        }
+
+        .destaque {
+            border: 3px solid #f8bbd0;
+        }
+
+        li {
+            margin: 8px;
+        }
+
+        .video {
+            text-align: center;
+        }
+
+        .video a {
+            color: #d81b60;
+            font-weight: bold;
+        }
+
+        footer {
+            background: white;
+            color: #d81b60;
+            text-align: center;
+            padding: 20px;
+            border-top: 3px solid #f8bbd0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+
+        <h1>🎀 Outubro Rosa</h1>
+
+        <p>Informação, prevenção e cuidado.</p>
+
+        <nav>
+            <a href="#sobre">O que é?</a>
+            <a href="#riscos">Riscos</a>
+            <a href="#prevencao">Prevenção</a>
+            <a href="#deteccao">Detecção</a>
+            <a href="#mitos">Mitos</a>
+        </nav>
+
+    </header>
+
+
+    <section id="sobre">
+
+        <h2>O que é o Outubro Rosa?</h2>
+
+        <p>
+            O Outubro Rosa é uma campanha de conscientização sobre o
+            câncer de mama. Seu objetivo é informar a população sobre
+            prevenção, sinais, sintomas e detecção precoce.
+        </p>
+
+        <h2>O que é câncer de mama?</h2>
+
+        <p>
+            É uma doença causada pela multiplicação descontrolada de
+            células da mama, formando um tumor.
+        </p>
+
+    </section>
+
+
+    <section id="riscos">
+
+        <h2>Fatores de risco</h2>
+
+        <ul>
+            <li>Idade avançada;</li>
+            <li>Histórico familiar;</li>
+            <li>Excesso de peso;</li>
+            <li>Consumo de álcool;</li>
+            <li>Tabagismo;</li>
+            <li>Alguns fatores hormonais.</li>
+        </ul>
+
+    </section>
+
+
+    <section>
+
+        <h2>Sinais e sintomas</h2>
+
+        <ul>
+            <li>Caroço na mama ou axila;</li>
+            <li>Mudança no formato da mama;</li>
+            <li>Alterações na pele;</li>
+            <li>Alterações no mamilo;</li>
+            <li>Secreção pelo mamilo.</li>
+        </ul>
+
+    </section>
+
+
+    <section class="destaque" id="prevencao">
+
+        <h2>💗 Prevenção e redução de riscos</h2>
+
+        <p>
+            Alguns hábitos podem ajudar a reduzir os riscos do câncer
+            de mama:
+        </p>
+
+        <ul>
+            <li>Praticar atividades físicas;</li>
+            <li>Ter uma alimentação saudável;</li>
+            <li>Evitar bebidas alcoólicas;</li>
+            <li>Não fumar;</li>
+            <li>Manter um peso saudável.</li>
+        </ul>
+
+        <p>
+            Cuidar da saúde e manter hábitos saudáveis são importantes
+            para a prevenção.
+        </p>
+
+    </section>
+
+
+    <section class="destaque" id="deteccao">
+
+        <h2>🔎 Detecção precoce</h2>
+
+        <p>
+            Conhecer o próprio corpo ajuda a perceber mudanças.
+            Ao notar alguma alteração nova ou persistente, procure
+            um profissional de saúde.
+        </p>
+
+        <p>
+            A mamografia é um dos principais exames utilizados para
+            o rastreamento do câncer de mama, conforme as recomendações
+            de saúde.
+        </p>
+
+    </section>
+
+
+    <section>
+
+        <h2>📚 Cards informativos</h2>
+
+        <p>
+            🎀 <strong>Outubro Rosa:</strong> campanha de conscientização
+            sobre o câncer de mama.
+        </p>
+
+        <p>
+            🏃 <strong>Vida saudável:</strong> atividade física e bons
+            hábitos podem ajudar a reduzir riscos.
+        </p>
+
+        <p>
+            🩺 <strong>Atenção:</strong> alterações persistentes devem
+            ser avaliadas por um profissional.
+        </p>
+
+    </section>
+
+
+    <section id="mitos">
+
+        <h2>❓ Mitos e verdades</h2>
+
+        <p>
+            <strong>“Todo caroço é câncer.”</strong><br>
+            ❌ Mito. Existem outras causas para caroços.
+        </p>
+
+        <p>
+            <strong>“Homens também podem ter câncer de mama.”</strong><br>
+            ✅ Verdade. Apesar de ser raro, pode acontecer.
+        </p>
+
+        <p>
+            <strong>“Hábitos saudáveis ajudam na prevenção.”</strong><br>
+            ✅ Verdade. Eles podem ajudar a reduzir alguns riscos.
+        </p>
+
+    </section>
+
+
+    <section class="video">
+
+        <h2>🎥 Vídeo educativo</h2>
+
+        <p>
+            Saiba mais sobre o câncer de mama no canal do
+            Ministério da Saúde:
+        </p>
+
+        <p>
+            <a href="https://www.youtube.com/@MinSaudeBR" target="_blank">
+                ▶️ Canal do Ministério da Saúde no YouTube
+            </a>
+        </p>
+
+    </section>
+
+
+    <footer>
+
+        <h3>🎀 Outubro Rosa</h3>
+
+        <p>
+            Informação também é uma forma de prevenção.
+        </p>
+
+    </footer>
+
+</body>
+</html>
